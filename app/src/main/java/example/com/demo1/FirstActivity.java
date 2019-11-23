@@ -1,5 +1,6 @@
 package example.com.demo1;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -26,6 +27,9 @@ public class FirstActivity extends AppCompatActivity implements  View.OnClickLis
         signInBtn = findViewById(R.id.signin_btn);
 
         signInBtn.setOnClickListener(this);
+
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.hide();
 
 //        signInBtn.setOnClickListener(new View.OnClickListener() {
 //
